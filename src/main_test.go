@@ -27,6 +27,6 @@ func TestSoma_10(t *testing.T){
 func TestSoma_2(t *testing.T){
   resultado := soma(10,-8)
   if resultado != 10{
-    t.Errorf("Soma esperada: %d, obtida: %d", 4, resultado)
+    t.Errorf("Soma esperada: %d, obtida: %d", 2, resultado)
   }
 }
