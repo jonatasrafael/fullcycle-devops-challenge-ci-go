@@ -9,6 +9,6 @@ func soma(a, b int) int {
 func main() {
 
   res := soma(5, 5)
-  fmt.Println("Resultado da soma de 5+5=", res)
+  fmt.Println("Resultado da soma de 5 + 5 =", res)
 
 }
