@@ -1,4 +1,4 @@
-FROM gcr.io/cloud-builders/go:alpine as builder
+FROM golang:alpine as builder
 
 COPY src/main.go .
 
