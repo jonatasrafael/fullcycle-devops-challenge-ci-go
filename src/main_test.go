@@ -12,21 +12,21 @@ func TestSoma_4(t *testing.T){
 func TestSoma_5(t *testing.T){
   resultado := soma(2,-3)
   if resultado != -1{
-    t.Errorf("Soma esperada: %d, obtida: %d", 4, resultado)
+    t.Errorf("Soma esperada: %d, obtida: %d", -1, resultado)
   }
 }
 
 func TestSoma_10(t *testing.T){
   resultado := soma(-2,12)
   if resultado != 10{
-    t.Errorf("Soma esperada: %d, obtida: %d", 4, resultado)
+    t.Errorf("Soma esperada: %d, obtida: %d", 10, resultado)
   }
 }
 
 
 func TestSoma_2(t *testing.T){
   resultado := soma(10,-8)
-  if resultado != 10{
+  if resultado != 2{
     t.Errorf("Soma esperada: %d, obtida: %d", 2, resultado)
   }
 }
