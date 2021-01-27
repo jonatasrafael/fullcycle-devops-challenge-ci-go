@@ -1,9 +1,7 @@
-FROM golang:1.14
+FROM golang
 
 COPY . .
 
-RUN go build main.go
-
-EXPOSE 8080
+RUN go build ./src/main.go
 
 ENTRYPOINT [ "./main"]
