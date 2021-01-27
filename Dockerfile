@@ -1,7 +1,11 @@
-FROM golang
+FROM golang:alpine as builder
 
-COPY . .
+COPY src/main.go .
 
-RUN go build ./src/main.go
+RUN go build -ldflags="-s -w" main.go
 
-ENTRYPOINT [ "./main"]
+FROM scratch
+
+COPY --from=builder /go/main .
+
+ENTRYPOINT [ "./main" ]
